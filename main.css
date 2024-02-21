@@ -66,6 +66,10 @@ header ul a {
   color: #0fa968;
 }
 
+header ul a:hover {
+  color: #effef7;
+}
+
 nav ul li button {
   background-color: transparent;
   border: none;
@@ -127,11 +131,46 @@ img {
 .hero-container h1 {
   font-size: 62px;
   color: var(--title-color);
+  content: "";
+  display: inline-block;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: appear 2s linear forwards;
 }
 
 .hero-container h3 {
   color: var(--text-color);
   margin-top: 1em;
+}
+
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: var(--text-color);
+}
+
+.about-us header {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us header h2 {
+  font-size: 64px;
+  color: var(--title-color);
+}
+
+.about-us header h4 {
+  font-size: 20px;
+}
+
+.about-us header img {
+  max-width: 150px;
 }
 
 
@@ -265,6 +304,16 @@ img {
 
   50% {
     overflow: hidden;
+  }
+}
+
+@keyframes appear {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
   }
 }
 
