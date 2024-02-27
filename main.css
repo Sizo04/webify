@@ -112,7 +112,7 @@ img {
 }
 
 .hero {
-  background-image: url(/images/heroimg.jpg);
+  background-image: url(./images/heroimg.jpg);
   max-height: 600px;
   background-position: center;
   background-repeat: no-repeat;
