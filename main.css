@@ -66,6 +66,10 @@ header ul a {
   color: #0fa968;
 }
 
+header ul a:hover {
+  color: #effef7;
+}
+
 nav ul li button {
   background-color: transparent;
   border: none;
@@ -108,7 +112,7 @@ img {
 }
 
 .hero {
-  background-image: url(/images/heroimg.jpg);
+  background-image: url(./images/heroimg.jpg);
   max-height: 600px;
   background-position: center;
   background-repeat: no-repeat;
@@ -138,6 +142,12 @@ img {
 .hero-container h1 {
   font-size: 62px;
   color: var(--title-color);
+  content: "";
+  display: inline-block;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: appear 2s linear forwards;
 }
 
 .hero-container1 h1 {
@@ -149,6 +159,55 @@ img {
   color: var(--text-color);
   margin-top: 1em;
 }
+
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: var(--text-color);
+}
+
+.about-us header {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us header h2 {
+  font-size: 64px;
+  color: var(--title-color);
+}
+
+.about-us header h4 {
+  font-size: 20px;
+}
+
+.about-us header img {
+  max-width: 150px;
+}
+
+.about-us .about-container .offers {
+  display: flex;
+}
+
+.offers aside {
+  max-width: 500px;
+}
+
+aside img {
+  max-height: 50px;
+  margin: 0 1em;
+}
+
+aside .offer {
+  display: flex;
+  margin: 4em 0;
+}
+
+aside h2 {}
 
 
 
@@ -282,6 +341,28 @@ img {
 
   50% {
     overflow: hidden;
+  }
+}
+
+@keyframes appear {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .offers {
+    flex-direction: column;
+    margin-top: 5em;
+  }
+
+  aside .offer {
+    margin: 0;
+    margin-bottom: 4em;
   }
 }
 
