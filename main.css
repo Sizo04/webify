@@ -188,12 +188,14 @@ aside img {
 
 aside .offer {
   display: flex;
-  margin: 4em 0;
+  margin: 3em 0;
+  padding: 1em;
 }
 
 .offer:hover {
   background-color: #03301f;
-  padding: 1em;
+
+
   color: #effef7;
 }
 
