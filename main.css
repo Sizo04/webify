@@ -40,6 +40,7 @@ header {
   padding: 1em 1em;
 }
 
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -134,7 +135,7 @@ img {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background-color: black;
+  background-color: #000000f0;
   padding: 5em 0;
 
 }
@@ -195,6 +196,7 @@ img {
 
 .offers aside {
   max-width: 500px;
+  padding-bottom: 5em;
 }
 
 aside img {
@@ -206,6 +208,7 @@ aside .offer {
   display: flex;
   margin: 3em 0;
   padding: 1em;
+  border-radius: 10px;
 }
 
 .offer:hover {
@@ -220,7 +223,7 @@ aside .offer {
   place-items: center;
   margin-inline: 0rem;
   padding-block: 5rem;
-  background-color: #108554;
+  background-color: #000000f0;
 }
 
 .card__container {
