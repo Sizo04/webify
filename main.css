@@ -31,6 +31,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 
@@ -39,6 +40,9 @@ header {
   background-color: black;
   padding: 1em 1em;
 }
+
+
+
 
 nav {
   display: flex;
@@ -195,6 +199,7 @@ img {
 
 .offers aside {
   max-width: 500px;
+  padding-bottom: 5em;
 }
 
 aside img {
@@ -204,10 +209,27 @@ aside img {
 
 aside .offer {
   display: flex;
-  margin: 4em 0;
+  margin: 3em 0;
+  padding: 1em;
+  border-radius: 10px;
 }
 
+.offer:hover {
+  background-color: var(--container-color);
+}
 
+.back-to-top {
+  right: 5em;
+  bottom: 5em;
+  position: fixed;
+  cursor: pointer;
+
+}
+
+.back-to-top img {
+  border-radius: 10px;
+
+}
 
 /*=============== CARD ===============*/
 .container {
@@ -216,6 +238,8 @@ aside .offer {
   margin-inline: 0rem;
   padding-block: 5rem;
   background-color: #2f3b36;
+  position: relative;
+  z-index: -1;
 }
 
 .card__container {
@@ -386,6 +410,16 @@ aside .offer {
   .hero-container h3 {
     font-size: 16px;
   }
+
+  aside img {
+    max-width: 50px;
+  }
+
+  .offer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -440,7 +474,7 @@ aside .offer {
   background-color: rgba(0, 0, 0, 0.589);
 }
 
-.h2{
+.h2 {
   color: #555;
   text-align: center;
   font-weight: 300;
@@ -455,26 +489,28 @@ p:nth-of-type(3) {
   margin: 40px 50px;
 }
 
-.contact-container{
+.contact-container {
   height: 71vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.contact-left{
+.contact-left {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 20px;
 }
-.contact-left-title h2{
+
+.contact-left-title h2 {
   font-weight: 600;
   color: #0fa968;
   font-size: 40px;
   margin-top: 5px;
 }
-.contact-left-title hr{
+
+.contact-left-title hr {
   border: none;
   width: 120px;
   height: 5px;
@@ -483,7 +519,7 @@ p:nth-of-type(3) {
   margin-bottom: 20px;
 }
 
-.contact-input{
+.contact-input {
   width: 50rem;
   height: 50px;
   border: none;
@@ -495,26 +531,26 @@ p:nth-of-type(3) {
   transition: 1s ease;
 }
 
-.contact-input:hover{
+.contact-input:hover {
   height: 5rem;
-  
+
 }
 
-.contact-left textarea{
+.contact-left textarea {
   height: 140px;
   padding-top: 15px;
   border-radius: 20px;
 }
 
-.contact-input:focus{
+.contact-input:focus {
   border: 2px solid #ff994f;
 }
 
-.contact-input::placeholder{
+.contact-input::placeholder {
   color: #108554;
 }
 
-.contact-left button{
+.contact-left button {
   display: flex;
   align-items: center;
   padding: 15px 30px;
@@ -527,18 +563,20 @@ p:nth-of-type(3) {
   cursor: pointer;
 }
 
-.contact-left button img{
+.contact-left button img {
   height: 15px;
 }
-.contact-right img{
+
+.contact-right img {
   width: 500px;
 }
 
-@media (max-width:1320px){
-  .contact-input{
+@media (max-width:1320px) {
+  .contact-input {
     width: 80vw;
   }
-  .contact-right{
+
+  .contact-right {
     display: none;
   }
 }
@@ -550,40 +588,48 @@ footer {
   color: black;
   background: #0fa968;
 }
+
 footer ul {
   list-style: none;
 }
+
 footer p {
   color: black;
   max-width: 25em;
   font-size: 0.9em;
   line-height: 23px;
 }
+
 footer a {
   color: black;
   text-decoration: none;
 }
+
 footer .container1 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2em;
 }
+
 .footer .container1 {
   display: flex;
   justify-content: space-between;
   gap: 2em;
 }
+
 .brand {
   display: block;
   font-size: 1.8em;
   font-weight: 600;
   margin-bottom: 1em;
 }
+
 .media-icons li,
 .services-icons li {
   display: inline-block;
   margin: 0.5em 0.5em 0.5em 0;
 }
+
 .media-icons a {
   font-size: 1.1em;
   width: 2em;
@@ -595,53 +641,65 @@ footer .container1 {
   align-items: center;
   transition: 0.3s;
 }
+
 .media-icons a:hover {
   background: black;
   color: #0fa968;
 }
+
 .services-icons a {
   font-size: 1.6em;
 }
+
 .services-icons a:hover {
   color: #94fbab;
 }
+
 .footer-bottom {
   display: flex;
   justify-content: center;
   border-top: 1px solid rgba(138, 208, 153, 0.36);
   padding: 2em;
 }
+
 .footer .menu {
   margin-bottom: 1em;
 }
+
 .footer .menu li {
   display: inline-block;
   margin: 0 0.7em 0.7em 0;
   text-align: center;
 }
+
 .footer .menu a {
   transition: 0.3s;
   font-weight: 600;
 }
+
 .footer .menu a:hover {
   color: #0fa968;
   background: black;
   padding: 10px;
   border-radius: 5px;
 }
+
 .input-wrap {
   margin: 1em 0;
   display: flex;
 }
+
 .input-wrap input {
   padding: 0.5em;
   border: none;
   background: #20232a;
   color: #ccc;
 }
+
 .input-wrap input:focus {
   outline: none;
 }
+
 .input-wrap button {
   padding: 0.8em;
   background: #94fbab;
@@ -649,10 +707,12 @@ footer .container1 {
   color: #217634;
   transition: 0.3s;
 }
+
 .input-wrap button:hover {
   background: black;
   color: #0fa968;
 }
+
 /* == responsive == */
 @media screen and (max-width: 900px) {
   .footer .container1 {
