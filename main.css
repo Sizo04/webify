@@ -34,6 +34,19 @@
 }
 
 
+::-webkit-scrollbar{
+  width: 0;
+}
+ #progressbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  background: linear-gradient(to top, #81f4c3, #43e5a0, #1acd81, #0fa968, #108554, #126945, #03301f);
+  border-radius: 10px;
+  z-index: 10;
+ }
+
 
 header {
   background-color: black;
