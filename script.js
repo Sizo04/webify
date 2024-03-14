@@ -5,6 +5,7 @@ hamButton.addEventListener("click", () => {
     hamMenu.classList.toggle("no-display");
 })
 
+
 let toTop = document.querySelector("#backToTop");
 
 toTop.addEventListener("click", () => {
@@ -40,4 +41,3 @@ function toggleProgressBar() {
   // Call the function on page load and on window resize
   window.onload = toggleProgressBar;
   window.onresize = toggleProgressBar;
-  

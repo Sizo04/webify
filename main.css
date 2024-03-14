@@ -544,6 +544,7 @@ p:nth-of-type(3) {
   transition: 1s ease;
 }
 
+
 .contact-input2 {
   width: 50rem;
   height: 50px;
@@ -565,6 +566,13 @@ p:nth-of-type(3) {
   height: 10rem;
 
 }
+
+
+.contact-input:hover {
+  height: 5rem;
+
+}
+
 
 .contact-left textarea {
   height: 140px;
@@ -606,9 +614,11 @@ p:nth-of-type(3) {
     width: 80vw;
   }
 
+
   .contact-input2 {
     width: 80vw;
   }
+
 
   .contact-right {
     display: none;
