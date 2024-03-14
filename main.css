@@ -35,6 +35,19 @@
 }
 
 
+::-webkit-scrollbar{
+  width: 0;
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  background: linear-gradient(to top, #81f4c3, #43e5a0, #1acd81, #0fa968, #108554, #126945, #03301f);
+  border-radius: 10px;
+  z-index: 2;
+}
 
 header {
   background-color: black;
@@ -212,6 +225,14 @@ aside .offer {
   margin: 3em 0;
   padding: 1em;
   border-radius: 10px;
+
+}
+
+.offer:hover {
+  background-color: var(--container-color);
+}
+
+=======
 }
 
 .offer:hover {
@@ -531,10 +552,38 @@ p:nth-of-type(3) {
   transition: 1s ease;
 }
 
+
+
+.contact-input2 {
+  width: 50rem;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+  transition: 1s ease;
+}
+
+=======
+
 .contact-input:hover {
   height: 5rem;
 
 }
+
+.contact-input2:hover {
+  height: 10rem;
+
+}
+
+
+.contact-input:hover {
+  height: 5rem;
+
+}
+
 
 .contact-left textarea {
   height: 140px;
@@ -575,6 +624,14 @@ p:nth-of-type(3) {
   .contact-input {
     width: 80vw;
   }
+
+
+
+  .contact-input2 {
+    width: 80vw;
+  }
+
+
 
   .contact-right {
     display: none;
