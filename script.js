@@ -29,6 +29,7 @@ function goToTop() {
 }
 
 
+
 function toggleProgressBar() {
     var progressBar = document.getElementById('progressbar');
     if (window.innerWidth > 767) {
@@ -41,3 +42,4 @@ function toggleProgressBar() {
   // Call the function on page load and on window resize
   window.onload = toggleProgressBar;
   window.onresize = toggleProgressBar;
+
