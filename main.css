@@ -226,6 +226,10 @@ aside .offer {
 
 }
 
+#backToTop {
+  display: none;
+}
+
 .back-to-top img {
   border-radius: 10px;
 
@@ -238,9 +242,9 @@ aside .offer {
   margin-inline: 0rem;
   padding-block: 5rem;
   background-color: #2f3b36;
-  position: relative;
-  z-index: -1;
+
 }
+
 
 .card__container {
   display: grid;
