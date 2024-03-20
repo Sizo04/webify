@@ -27,3 +27,19 @@ function goToTop() {
 
     document.documentElement.scrollTop = 0;
 }
+
+
+
+function toggleProgressBar() {
+    var progressBar = document.getElementById('progressbar');
+    if (window.innerWidth > 767) {
+      progressBar.style.display = 'block';
+    } else {
+      progressBar.style.display = 'none';
+    }
+  }
+  
+  // Call the function on page load and on window resize
+  window.onload = toggleProgressBar;
+  window.onresize = toggleProgressBar;
+
