@@ -11,6 +11,7 @@
   --body-color: #11563a;
   --container-color: #03301f;
   --dark-bg: rgb(17, 17, 17);
+  --light-text: #dafeef;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -222,7 +223,7 @@ img {
   padding-bottom: 5em;
 }
 
-aside img {
+.offers aside img {
   max-height: 50px;
   margin: 0 1em;
 }
@@ -233,6 +234,10 @@ aside .offer {
   padding: 1em;
   border-radius: 10px;
 
+}
+
+.offer p {
+  color: var(--light-text);
 }
 
 .offer:hover {
@@ -267,6 +272,36 @@ aside .offer {
 
 }
 
+/*who we are*/
+
+.who-we-are {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(12, 12, 12);
+}
+
+.who-we-are .wrapper {
+  display: flex;
+  padding: 2em 0;
+  gap: 5em;
+}
+
+.who-we-are .wrapper .text {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--light-text);
+}
+
+.who-we-are .wrapper .text h2 {}
+
+.who-we-are .wrapper .text h4 {
+  margin: 0.5em 0;
+  color: var(--text-color);
+}
+
 /*=============== CARD ===============*/
 .container {
   display: grid;
@@ -275,9 +310,8 @@ aside .offer {
   padding-block: 5rem;
 
   background-color: var(--dark-bg);
-=======
-  background-color: #2f3b36;
 
+  background-color: #2f3b36;
 
 }
 
@@ -660,7 +694,7 @@ footer {
   margin: 0;
   padding: 0;
   color: var(--dark-bg);
-  background: #0fa968;
+  background: var(--dark-bg);
 }
 
 footer ul {
@@ -668,14 +702,14 @@ footer ul {
 }
 
 footer p {
-  color: var(--dark-bg);
+  color: var(--light-text);
   max-width: 25em;
   font-size: 0.9em;
   line-height: 23px;
 }
 
 footer a {
-  color: var(--dark-bg);
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -708,7 +742,7 @@ footer .container1 {
   font-size: 1.1em;
   width: 2em;
   height: 2em;
-  border: 1px #fff solid;
+  border: 1px var(--light-text) solid;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -717,7 +751,7 @@ footer .container1 {
 }
 
 .media-icons a:hover {
-  background: var(--dark-bg);
+  background: var(--light-text);
   color: #0fa968;
 }
 
@@ -753,7 +787,7 @@ footer .container1 {
 
 .footer .menu a:hover {
   color: #0fa968;
-  background: var(--dark-bg);
+  background: var(--light-text);
   padding: 10px;
   border-radius: 5px;
 }
