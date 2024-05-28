@@ -258,6 +258,10 @@ aside .offer {
   display: none;
 }
 
+#backToTop {
+  display: none;
+}
+
 .back-to-top img {
   border-radius: 10px;
 
@@ -269,7 +273,11 @@ aside .offer {
   place-items: center;
   margin-inline: 0rem;
   padding-block: 5rem;
+
   background-color: var(--dark-bg);
+=======
+  background-color: #2f3b36;
+
 
 }
 
