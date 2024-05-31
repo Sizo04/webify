@@ -1,8 +1,15 @@
 const hamButton = document.querySelector("#hamBtn");
+const hamButtonImage = document.querySelector("#ham-btn-img");
 const hamMenu = document.querySelector("#hamMenu");
 
 hamButton.addEventListener("click", () => {
     hamMenu.classList.toggle("no-display");
+
+    if (hamMenu.classList.contains("no-display")) {
+        hamButtonImage.src = "images/hammenu.png";
+    } else {
+        hamButtonImage.src = "images/hamclose.png";
+    }
 })
 
 
@@ -33,13 +40,13 @@ function goToTop() {
 function toggleProgressBar() {
     var progressBar = document.getElementById('progressbar');
     if (window.innerWidth > 767) {
-      progressBar.style.display = 'block';
+        progressBar.style.display = 'block';
     } else {
-      progressBar.style.display = 'none';
+        progressBar.style.display = 'none';
     }
-  }
-  
-  // Call the function on page load and on window resize
-  window.onload = toggleProgressBar;
-  window.onresize = toggleProgressBar;
+}
+
+// Call the function on page load and on window resize
+window.onload = toggleProgressBar;
+window.onresize = toggleProgressBar;
 
