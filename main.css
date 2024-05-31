@@ -181,7 +181,7 @@ img {
 }
 
 .hero-container h3 {
-  color: var(--text-color);
+  color: var(--light-text);
   margin-top: 1em;
 }
 
@@ -295,7 +295,13 @@ aside .offer {
   color: var(--light-text);
 }
 
-.who-we-are .wrapper .text h2 {}
+.who-we-are img {
+  min-width: 400px;
+}
+
+.who-we-are .wrapper .text h2 {
+  color: var(--first-color);
+}
 
 .who-we-are .wrapper .text h4 {
   margin: 0.5em 0;
@@ -456,11 +462,47 @@ aside .offer {
     margin-top: 5em;
   }
 
+  .offers aside img {
+    max-width: 50px;
+    margin: auto;
+  }
+
+  .offers aside {
+    padding-bottom: 0;
+  }
+
   aside .offer {
     margin: 0;
     margin-bottom: 4em;
+    flex-direction: column;
+    text-align: center;
   }
+
+
+
+  .who-we-are .wrapper {
+    flex-direction: column;
+  }
+
+  .who-we-are img {
+    max-width: 600px;
+  }
+
+  .who-we-are .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .who-we-are .text {
+    margin: 0 1em;
+  }
+
 }
+
+
+
+
 
 @media only screen and (max-width: 800px) {
   nav ul a {
@@ -473,6 +515,13 @@ aside .offer {
 
   .hero-container h1 {
     font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .who-we-are img {
+    max-width: 300px;
+    min-width: 0;
   }
 }
 
