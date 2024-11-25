@@ -13,7 +13,12 @@ hamButton.addEventListener("click", () => {
 })
 
 
-let toTop = document.querySelector("#backToTop");
+const toTop = document.querySelector("#backToTop");
+
+function goToTop() {
+
+    document.documentElement.scrollTop = 0;
+}
 
 toTop.addEventListener("click", () => {
     goToTop();
@@ -28,11 +33,6 @@ function scrollFunction() {
     } else {
         toTop.style.display = "none";
     }
-}
-
-function goToTop() {
-
-    document.documentElement.scrollTop = 0;
 }
 
 
